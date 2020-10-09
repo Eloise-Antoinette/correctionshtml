@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo3</title>
+</head>
+<body>
+
+    <form action="traitement.html" name="exo3" method="POST" enctype="multipart/form-data">
+        <p>
+            <label for="lname">Nom :</label>
+            <input type="text" name="name" id="lname">
+        </p>
+        <p>
+            <label for="fname">Prénom :</label>
+            <input type="text" name="fname" id="fname">
+        </p>
+        <p>
+            <label for="mail">Mail :</label>
+            <input type="email" name="mail" id="mail" required>
+        </p>
+        <p>
+            <label for="sexe">Sexe :</label> 
+            <input type="radio" name="sexe" id="sexe" value="m">Masculin
+            <input type="radio" name="sexe" value="f">Féminin
+        </p>
+        <p>
+            <label for="photo">Votre photo :</label>
+            <input type="file" name="photo" id="photo" accept=".jpg, .jpeg, .png">
+        </p>
+        <p>
+            <label for="pays">Pays :</label>
+            <select name="pays" id="pays">
+                <option value="FRANCE">FRANCE</option>
+                <option value="ANGLETERRE">ANGLETERRE</option>
+                <option value="ALLEMAGNE">ALLEMAGNE</option>
+                <option value="ITALIE">ITALIE</option>
+                <option value="SUISSE">SUISSE</option>
+                <option value="ESPAGNE">ESPAGNE</option>
+            </select>
+        </p>
+        <p>
+            <label for="langue">Langues :</label>
+            <select name="pays" id="langue" multiple size="5">
+                <option value="FRANCAIS">FRANCAIS</option>
+                <option value="ANGLAIS">ANGLAIS</option>
+                <option value="ALLEMAND">ALLEMAND</option>
+                <option value="ITALIEN">ITALIEN</option>
+                <option value="ESPAGNOL">ESPAGNOL</option>
+            </select>
+        </p>
+        <p>
+            <label for="domaine">Domaines : </label>
+            <input type="checkbox" name="Plombier" value="Plombier" id="domaine">
+            <label for="Plombier">Plombier</label>
+            <input type="checkbox" name="Electricien" value="Eléctricien" >
+            <label for="Electricien">Eléctricien</label>
+            <input type="checkbox" name="Macon" value="Maçon">
+            <label for="Macon">Maçon</label>
+            <input type="checkbox" name="Carreleur" value="Carreleur">
+            <label for="Carreleur">Carreleur</label>
+            <input type="checkbox" name="Menuisier" value="Menuisier">
+            <label for="Menuisier">Menuisier</label>
+            <input type="checkbox" name="Couvreur" value="Couvreur">
+            <label for="Couvreur">Couvreur</label>
+        </p>
+
+        <button type="submit">Envoyer</button>
+
+    </form>
+    
+</body>
+</html>

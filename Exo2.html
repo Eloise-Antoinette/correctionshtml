@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        table {
+            width: 200px;
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form name="Commande" action="">
+
+        <fieldset>
+
+
+            <legend>Client</legend>
+            <p><label for="nomPrenon">Nom et prénom : </label>
+                <input type="text" name="nomPrenon" placeholder="Nom et prénom" maxlength="50" id="nomPrenon"  autofocus>
+            </p>
+            <p>
+                <label for="adresse">Adresse : </label>
+                <input type="text" name="adresse" maxlength="300" id="adresse">
+            </p>
+            <p>
+                <label for="codePostal">Code postal: </label>
+                <input type="text" name="codePostal" pattern="[0-9]{5}" size="3" id="codePostal">
+            </p>
+
+            <p>
+                <label for="pays">Pays: </label>
+                <input type="text" name="pays" readonly value="France" id="pays">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Commande</legend>
+            <p><label for="modele"></label>
+                <input type="text" name="modele" value="Road 66" maxlength="50" id="modele">
+            </p>
+            <p><label for="taille">Taille : </label><br />
+
+
+                <input type="range" id="taille" name="taille" min="1" max="4">
+
+            <table>
+
+                <tr>
+                    <td class="left">S</td>
+                    <td>M</td>
+                    <td>L</td>
+                    <td>XL</td>
+                </tr>
+            </table>
+
+
+
+            <p>
+                <label for="quantite">Quantité: </label>
+                <input type="number" name="quantite" min="1" max="165" step="3" value="1" id="quantite">
+            </p>
+            </p>
+        </fieldset>
+
+        <p>
+
+            <input type="reset" value="Recommencer">
+            <input type="submit" value="Commander">
+        </p>
+
+    </form>
+</body>
+
+</html>
